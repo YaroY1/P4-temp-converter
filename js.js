@@ -28,7 +28,7 @@ const tempChanger = () => {
 		converter.value = "";
 	} else if (one.textContent === "°F" && converter.value !== "") {
 		celsius = (converter.value - 32) / 1.8;
-		result.textContent = `${convBtn.value}°F to ${celsius.toFixed(1)}°C`;
+		result.textContent = `${converter.value}°F to ${celsius.toFixed(1)}°C`;
 		converter.value = "";
 	} else if (converter.value === "") {
 		result.textContent = "Musisz podać jakąś wartość";
